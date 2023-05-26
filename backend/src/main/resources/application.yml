@@ -2,7 +2,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3307/devquizhub?createDatabaseIfNotExist=true&characterEncoding=UTF-8&profileSql=true
+    url: jdbc:mysql://mysql:3306/devquizhub?createDatabaseIfNotExist=true&characterEncoding=UTF-8&profileSql=true
     username: devquizhub
     password: 1234
 
