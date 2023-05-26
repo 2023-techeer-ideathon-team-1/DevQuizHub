@@ -10,4 +10,5 @@ import lombok.NoArgsConstructor;
 public class SolveInfo {
     Long problemId;
     Long memberId;
+    String memberAnswer;
 }

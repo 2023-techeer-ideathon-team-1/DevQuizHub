@@ -30,11 +30,39 @@ public class SolutionResultService {
         this.memberRepository = memberRepository;
     }
 
-    public SolutionResultService solve(Long SolveResultId)
+    public SolutionResultInfo solve(SolveInfo solveInfo)
     {
-        SolutionResultService service = null;
+        Solution solution = solutionRepository.getReferenceById(solveInfo.getProblemId());
+        Member member = memberRepository.getReferenceById(solveInfo.getMemberId());
 
-        return service;
+        if(solution.getAnswer().equals(solveInfo.getMemberAnswer()))
+        {
+            solutionResultRepository.save(
+                    SolutionResult.builder().
+                            solution_id(solution).member_id(member).isCorrect(true).answer(
+                                    solution.getAnswer()
+                            ).
+                            build()
+            );
+
+            return SolutionResultInfo.builder().
+                    memberId(member.getId()).solutionId(solution.getId()).isCorrect(true).
+                    build();
+        }
+
+        else{
+            solutionResultRepository.save(
+                    SolutionResult.builder().
+                            solution_id(solution).member_id(member).isCorrect(false).answer(
+                                    solution.getAnswer()
+                            ).
+                            build()
+            );
+
+            return SolutionResultInfo.builder().
+                    memberId(member.getId()).solutionId(solution.getId()).isCorrect(false).
+                    build();
+        }
     }
 
 }

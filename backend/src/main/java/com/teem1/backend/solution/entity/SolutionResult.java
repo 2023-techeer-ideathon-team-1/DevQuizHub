@@ -26,8 +26,8 @@ public class SolutionResult {
     private Solution solution_id;
 
     @Column(name = "is_collect")
-    private Boolean isCollect;
+    private Boolean isCorrect;
 
-
+    private String answer;
 
 }
