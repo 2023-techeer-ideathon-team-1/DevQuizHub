@@ -19,5 +19,3 @@ logging:
   level:
     org:
       hibernate: info
-server:
-  port: 7070
