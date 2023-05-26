@@ -1,13 +1,13 @@
-package com.teem1.DevQuizHub;
+package com.teem1.backend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DevQuizHubApplication {
+public class BackendApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DevQuizHubApplication.class, args);
+		SpringApplication.run(BackendApplication.class, args);
 	}
 
 }

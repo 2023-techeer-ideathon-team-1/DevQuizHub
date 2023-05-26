@@ -1,10 +1,10 @@
-package com.teem1.DevQuizHub;
+package com.teem1.backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DevQuizHubApplicationTests {
+class BackendApplicationTests {
 
 	@Test
 	void contextLoads() {
