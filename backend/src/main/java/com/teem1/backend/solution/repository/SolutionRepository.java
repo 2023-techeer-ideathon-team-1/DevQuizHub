@@ -13,5 +13,5 @@ public interface SolutionRepository extends JpaRepository<Solution, Long> {
 
     Optional<Solution> findById(Long id);
 
-    List<Solution> findIdByCategory(Category category);
+    List<Solution> findAllByCategory(Category category);
 }
