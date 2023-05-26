@@ -46,4 +46,9 @@ public class MemberController {
         return memberService.all();
     }
 
+    @GetMapping("/get/{id}")
+    public MemberDto getMember(@PathVariable Long id)
+    {
+        return memberService.getMember(id);
+    }
 }
