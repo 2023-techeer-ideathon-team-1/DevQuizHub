@@ -10,7 +10,4 @@ import java.util.Optional;
 public interface SolutionResultRepository extends JpaRepository<SolutionResult, Long> {
     Optional<SolutionResult> findById(Long id);
 
-    Optional<SolutionResult> findSolutionResultByIsCollectAndMember_id(Long id, Boolean isCollect, Member member_id);
-
-
 }

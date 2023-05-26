@@ -29,4 +29,5 @@ public class SolutionResult {
     private Boolean isCollect;
 
 
+
 }
