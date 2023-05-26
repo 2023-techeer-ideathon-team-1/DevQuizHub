@@ -1,6 +1,6 @@
 package com.teem1.backend.solution.entity;
 
-public enum category {
+public enum Category {
     cs,
     network,
     os,

@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Table(name = "solution")
-public class solution {
+public class Solution {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "solution_id")
@@ -17,7 +17,7 @@ public class solution {
 
     @Column(name = "category", nullable = false)
     @Enumerated(EnumType.STRING)
-    private category foodCategory;
+    private Category category;
 
     @Column(name = "question", nullable = false)
     private String question;
