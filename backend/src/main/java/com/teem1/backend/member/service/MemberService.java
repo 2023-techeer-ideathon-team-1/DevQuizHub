@@ -75,20 +75,4 @@ public class MemberService {
         memberRepository.save(member);
     }
 
-    public MemberDto getMember(Long memberId)
-    {
-        Optional<Member> member = memberRepository.findById(memberId);
-        MemberDto result = new MemberDto();
-        if(member.isPresent())
-        {
-            Member present = member.get();
-            result.email = present.email;
-            result.password = present.password;
-            result.nickname = present.nickname;
-            result.grade = present.grade;
-
-        }
-
-        return result;
-    }
 }
