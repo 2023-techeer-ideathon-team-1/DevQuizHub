@@ -1,5 +1,6 @@
 package com.teem1.backend.solution.service;
 
+
 import com.teem1.backend.member.entity.Member;
 import com.teem1.backend.member.repository.MemberRepository;
 import com.teem1.backend.solution.dto.SolutionResultInfo;
@@ -66,3 +67,4 @@ public class SolutionResultService {
     }
 
 }
+

@@ -7,7 +7,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
 
+
 public interface SolutionResultRepository extends JpaRepository<SolutionResult, Long> {
     Optional<SolutionResult> findById(Long id);
 
 }
+

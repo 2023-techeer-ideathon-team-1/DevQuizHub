@@ -1,9 +1,5 @@
 package com.teem1.backend.solution.service;
 
-import com.teem1.backend.constant.Grade;
-import com.teem1.backend.member.dto.MemberDto;
-import com.teem1.backend.member.entity.Member;
-import com.teem1.backend.member.repository.MemberRepository;
 import com.teem1.backend.solution.dto.SolutionDto;
 import com.teem1.backend.solution.entity.Category;
 import com.teem1.backend.solution.entity.Solution;
@@ -47,7 +43,7 @@ public class SolutionService {
 
     public List<SolutionDto> getAll(Category category) {
 
-        List<Solution> solutionList = solutionRepository.findIdByCategory(category);
+        List<Solution> solutionList = solutionRepository.findAllByCategory(category);
 
         ArrayList<SolutionDto> result = new ArrayList<>();
 
